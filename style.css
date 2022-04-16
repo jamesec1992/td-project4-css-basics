@@ -193,20 +193,32 @@ footer p:nth-child(2){
 }
 
 
-@media screen and (max-width:375px){
-    .box{
-        display: flex;
-        flex-direction: column;
-        max-height: 200px;
-    }
 
-    .box ul{
-        display: flex;
-        flex-direction: column;
+@media (max-width: 768px) {
+    .box {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      white-space: nowrap;
     }
-
-    /* .box-three{ */
-        padding: 0;
-        margin: 0;
-    /* } */
-}
+  
+    .nav-item a {
+      position: relative;
+      right: 40px;
+      bottom: 10px;
+    }
+  
+    .box-three {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .box-four-a {
+      display: flex;
+      flex-direction: column;
+    }
+    .i{
+      margin-bottom: 9px;
+    }
+  }
