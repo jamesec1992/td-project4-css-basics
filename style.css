@@ -30,18 +30,17 @@ body{
 .box{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 16px 32px;
     background-color: rgb(145, 62, 145);
-    max-height: 60px;
+    max-height: 80px;
 }
 
 .box ul{
     display: flex;
     justify-content: space-between;
     height: 100%;
-    margin-left: 50%;
-    width: 50%;
+    margin-left: 50%; 
+    width: 50%; 
 }
 
 .nav-item{
@@ -172,7 +171,6 @@ body{
 
 .i:hover{
     background-color: rgb(145, 62, 145);
-    transition: rgb(145, 62, 145) 500ms linear;
 }
 
 footer{
@@ -193,19 +191,30 @@ footer p:nth-child(2){
 }
 
 
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .box {
       display: flex;
       flex-direction: column;
       text-align: left;
-      white-space: nowrap;
+      /* white-space: nowrap; */
+      height: 100px
+    }
+
+    .box ul{
+        display: flex;
+        flex-direction: row;
+        width: 2rem;
     }
   
     .nav-item a {
       position: relative;
       right: 40px;
-      bottom: 10px;
+      bottom: 30px;
+    }
+
+    .first img{
+        height: 60%;
+        width: 60%;
     }
   
     .box-three {
@@ -214,6 +223,10 @@ footer p:nth-child(2){
       justify-content: center;
     }
   
+    .box-three-one{
+        padding-left: 0;
+    }
+
     .box-four-a {
       display: flex;
       flex-direction: column;
@@ -222,3 +235,20 @@ footer p:nth-child(2){
       margin-bottom: 9px;
     }
   }
+
+  @media (max-width: 411px) {
+      .box{
+          margin: 0;
+          padding: 0;
+      }
+
+    .box ul{
+        text-align: left;
+    }
+
+    .nav-item a{
+        padding-right: 1rem;
+    }
+}
+
+    
